@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+ <linearGradient id="wall" x2="1" y2=".4"><stop stop-color="#cbc5b1"/><stop offset=".55" stop-color="#ece6d6"/><stop offset="1" stop-color="#a9a38f"/></linearGradient>
+ <linearGradient id="inside" x2="1" y2="1"><stop stop-color="#242b23"/><stop offset=".5" stop-color="#525846"/><stop offset="1" stop-color="#8b8d72"/></linearGradient>
+ <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#92977a"/><stop offset="1" stop-color="#d6d2bc"/></linearGradient>
+ <linearGradient id="column"><stop stop-color="#6d7058"/><stop offset=".35" stop-color="#bec1a1"/><stop offset=".75" stop-color="#a2a789"/><stop offset="1" stop-color="#777c62"/></linearGradient>
+ <linearGradient id="plinth"><stop stop-color="#aeaa95"/><stop offset=".5" stop-color="#e8e0cb"/><stop offset="1" stop-color="#b9b09a"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<path fill="#e9e6dc" d="M0 0h1200v900H0z"/>
+<path fill="#3b4435" d="M0 0h487v900H0z"/>
+<g fill="#efeee4" font-family="Arial,Helvetica,sans-serif">
+ <text x="54" y="74" font-size="26" letter-spacing="-1">forma<tspan font-size="12" dy="-11">®</tspan></text>
+ <text x="54" y="136" font-size="10" letter-spacing="2.7">SPACES WITH SOUL</text>
+ <text x="47" y="348" font-family="Georgia,serif" font-size="93" letter-spacing="-5">Room</text>
+ <text x="47" y="440" font-family="Georgia,serif" font-style="italic" font-size="95" letter-spacing="-5">to feel.</text>
+ <path d="M56 502h49" stroke="#aeb89b" stroke-width="1"/>
+ <text x="56" y="552" font-size="13" fill="#c0c6b6">Thoughtful spaces.</text>
+ <text x="56" y="575" font-size="13" fill="#c0c6b6">Timeless ways of living.</text>
+ <text x="56" y="827" font-size="10" letter-spacing="2.5">ARCHITECTURE &amp; INTERIORS</text>
+ <path d="M419 61v25m-12-13h25" stroke="#e9e8dc"/>
+</g>
+<g transform="translate(487)">
+ <path fill="url(#wall)" d="M0 0h713v900H0z"/>
+ <path fill="#ddd7c5" d="M65 0v663l54-25V0z"/>
+ <path fill="#c2bca8" d="M626 0v665l87 30V0z"/>
+ <path fill="url(#floor)" d="M0 663h713v237H0z"/>
+ <path d="M153 681V309a205 205 0 0 1 410 0v372Z" fill="#968f78"/>
+ <path d="M177 673V307a180 180 0 0 1 360 0v366Z" fill="url(#inside)"/>
+ <path d="M205 659V312a152 152 0 0 1 304 0v347Z" fill="#565d49"/>
+ <path d="M264 641V324a125 125 0 0 1 240-48v365Z" fill="#777f63"/>
+ <path d="M316 641V331a115 115 0 0 1 187-88v398Z" fill="#8f9878"/>
+ <path d="M384 641V335a100 100 0 0 1 118-101v407Z" fill="#bac3a0"/>
+ <path d="M178 671h359l-99 65-161-9Z" fill="#d1cdb5"/>
+ <path d="M506 658 280 900H34l369-242Z" fill="#f9f2cf" opacity=".64"/>
+ <path d="M544 689 460 900" stroke="#a9a994" stroke-width="1"/>
+ <path d="M12 841h700" stroke="#b1b39b" opacity=".65"/>
+ <ellipse cx="313" cy="736" rx="93" ry="21" fill="#30382c" opacity=".23" filter="url(#shadow)"/>
+ <path d="M233 564h149v159q-72 31-149 0Z" fill="url(#plinth)"/>
+ <ellipse cx="307" cy="564" rx="74" ry="16" fill="#ded8c3"/>
+ <path d="M288 480q-21-43-20-71 0-22 15-31h43q13 8 13 30 2 28-20 72l6 60q-17 12-37 0Z" fill="url(#column)"/>
+ <ellipse cx="305" cy="379" rx="22" ry="6" fill="#4b5540"/>
+ <path d="M293 377q-11-89 23-136" fill="none" stroke="#454d34" stroke-width="3"/>
+ <path d="M302 313q-63-34-45-71 44 13 45 71M302 296q46-58 76-38-12 35-76 38M310 263q-16-65 11-78 21 36-11 78" fill="#555f40"/>
+ <text x="661" y="69" font-family="Arial,Helvetica,sans-serif" fill="#4b5041" font-size="10" letter-spacing="2" text-anchor="end">SELECTED SPACES — 01</text>
+ <text x="662" y="831" font-family="Arial,Helvetica,sans-serif" fill="#4b5041" font-size="10" letter-spacing="2" text-anchor="end">THE QUIET COLLECTION</text>
+</g>
+</svg>
