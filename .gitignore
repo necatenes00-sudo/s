@@ -3,3 +3,9 @@ dist/
 .npm/
 artifacts/
 *.log
+
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example

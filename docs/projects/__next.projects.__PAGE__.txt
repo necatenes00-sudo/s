@@ -1,0 +1,37 @@
+1:"$Sreact.fragment"
+2:"static/chunks/c15bf2b0-182b384b62e205ff.js"
+3:"static/chunks/500-fc3b64d9ff4a32a7.js"
+4:"static/chunks/18-c09f55c4fe18cdd3.js"
+5:"static/chunks/786-962f49f40123e0e0.js"
+6:"static/chunks/app/layout-93998dd0529d82d9.js"
+7:I[5369,["592","$2","500","$3","18","$4","786","$5","177","$6"],"default"]
+8:I[9866,["592","$2","500","$3","18","$4","786","$5","177","$6"],"default"]
+9:I[7121,[],""]
+a:I[4581,[],""]
+b:"static/chunks/app/projects/page-2cbff8204f2a7f00.js"
+c:I[8500,["500","$3","893","$b"],""]
+d:I[263,["592","$2","500","$3","18","$4","786","$5","177","$6"],"default"]
+14:I[4474,["500","$3","893","$b"],"default"]
+15:I[484,[],"OutletBoundary"]
+16:"$Sreact.suspense"
+19:"ViewportBoundary"
+1a:I[484,[],"$19"]
+1b:"MetadataBoundary"
+1c:I[484,[],"$1b"]
+1d:I[6869,[],"IconMark"]
+:HL["/s/_next/static/css/dfa39957c23d9b6f.css","style"]
+f:X
+12:X
+12:C
+13:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","main",null,{"className":"interior-page page-wrap","children":[["$","header",null,{"className":"interior-page-header","children":[["$","div",null,{"className":"interior-header-top","children":[["$","span",null,{"className":"eyebrow","children":"A SELECTED PERSPECTIVE"}],["$","span",null,{"className":"eyebrow","children":"INDEX / 01—04"}]]}],["$","h1",null,{"data-reveal":true,"children":["Work with",["$","br",null,{}],["$","span",null,{"children":"intention."}],["$","sup",null,{"children":"04"}]]}],["$","div",null,{"className":"interior-header-bottom","children":[["$","p",null,{"children":["A collection of ideas made tangible.",["$","br",null,{}],"Different worlds. One considered approach."]}],["$","p",null,{"className":"interior-disclosure","children":["Independent concept studies.",["$","br",null,{}],"Explorations of what comes next."]}]]}]]}],["$","$L14",null,{}],["$","div",null,{"className":"interior-ending","children":[["$","p",null,{"children":"YOUR PROJECT COULD BE NEXT."}],["$","$Lc",null,{"href":"/contact","children":["Let’s make something matter. ",["$","span",null,{"aria-hidden":"true","children":["$","svg",null,{"className":"arrow-icon ","viewBox":"0 0 24 24","fill":"none","aria-hidden":"true","children":["$","path",null,{"d":"M5 19 19 5M5 5h14v14","stroke":"currentColor","strokeWidth":"1.4"}]}]}]]}]]}]]}],null,["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]]}],"p":"$@18","v":null,"s":"$f"}}]]
+10:[["children",{"s":"projects","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L9",null,{"parallelRouterKey":"children","template":["$","$La",null,{}]}]]}],"p":"$@11","v":"$12","s":"$f"},"c":"$Q13"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/s/_next/static/css/dfa39957c23d9b6f.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"id":"top","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$L7",null,{}],["$","$L8",null,{}],["$","div",null,{"id":"page-content","children":[["$","div",null,{"id":"main","children":["$","$L9",null,{"parallelRouterKey":"children","template":["$","$La",null,{}],"notFound":[["$","main",null,{"className":"interior-page page-wrap interior-not-found","children":[["$","span",null,{"className":"eyebrow","children":"404 / A DIFFERENT DIRECTION"}],["$","h1",null,{"data-reveal":true,"children":["Off the",["$","br",null,{}],["$","span",null,{"children":"beaten path."}]]}],["$","p",null,{"children":["This page has moved, or the address took a wrong turn.",["$","br",null,{}],"There’s still plenty to discover."]}],["$","$Lc",null,{"className":"interior-submit","href":"/","children":["Back to the studio ",["$","span",null,{"aria-hidden":"true","children":["$","svg",null,{"className":"arrow-icon ","viewBox":"0 0 24 24","fill":"none","aria-hidden":"true","children":["$","path",null,{"d":"M5 19 19 5M5 5h14v14","stroke":"currentColor","strokeWidth":"1.4"}]}]}]]}],["$","$Lc",null,{"className":"line-link","href":"/projects","children":["Explore our work ",["$","span",null,{"aria-hidden":"true","children":["$","svg",null,{"className":"arrow-icon ","viewBox":"0 0 24 24","fill":"none","aria-hidden":"true","children":["$","path",null,{"d":"M5 19 19 5M5 5h14v14","stroke":"currentColor","strokeWidth":"1.4"}]}]}]]}]]}],[]]}]}],["$","footer",null,{"className":"site-footer page-wrap","children":[["$","$Lc",null,{"href":"/","className":"footer-wordmark","children":["DEMIR DIGITAL",["$","sup",null,{"children":"®"}]]}],["$","div",null,{"className":"footer-meta","children":[["$","span",null,{"children":"© 2026 DEMIR DIGITAL"}],["$","span",null,{"children":"CREATIVE AGENCY"}],["$","span",null,{"children":"ORDU — TÜRKİYE"}],["$","div",null,{"children":[[],["$","a",null,{"href":"#top","aria-label":"Back to top","children":["BACK TO TOP ",["$","svg",null,{"className":"arrow-icon ","viewBox":"0 0 24 24","fill":"none","aria-hidden":"true","children":["$","path",null,{"d":"M5 19 19 5M5 5h14v14","stroke":"currentColor","strokeWidth":"1.4"}]}]]}]]}]]}]]}]]}],["$","$Ld",null,{}]]}]}]]}],"p":"$@e","v":null,"s":"$f"},"c":"$Q10"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$16",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Selected work — Demir Digital®"}],["$","meta","1",{"name":"description","content":"Explore Demir Digital’s concept studies across hospitality, automotive, digital commerce and creative identity."}],["$","meta","2",{"property":"og:title","content":"Demir Digital — Creative Agency"}],["$","meta","3",{"property":"og:description","content":"Obsidian. Electric blue. Titanium. A new perspective on digital."}],["$","meta","4",{"property":"og:type","content":"website"}],["$","meta","5",{"name":"twitter:card","content":"summary"}],["$","meta","6",{"name":"twitter:title","content":"Demir Digital — Creative Agency"}],["$","meta","7",{"name":"twitter:description","content":"Obsidian. Electric blue. Titanium. A new perspective on digital."}],["$","link","8",{"rel":"icon","href":"/s/favicon.svg"}],["$","$L1d","9",{}]]}]}],null]}],null]}],"p":"$@1e","v":null,"s":"$f"}},"a":"$@1f","u":"$@20","b":"DhsupwZsHMWqAexItBP7c"}
+17:null
+f:300
+20:true
+f:C
+1f:0
+11:"$undefined"
+e:"$undefined"
+1e:"$undefined"
+18:"$undefined"

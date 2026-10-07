@@ -1,0 +1,5 @@
+:HL["/s/_next/static/css/dfa39957c23d9b6f.css","style"]
+:HL["/s/media/demir.webp","image"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"about","h":96,"c":"$Q2"}]]
+0:{"b":"DhsupwZsHMWqAexItBP7c","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

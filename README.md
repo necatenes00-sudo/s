@@ -1,54 +1,37 @@
 # Demir Digital
 
-Vite, Three.js ve GSAP ile hazırlanmış; Türkçe içerikli, 3D ve kaydırma animasyonları kullanan dijital stüdyo sitesi. Özgün SVG proje görselleri, duyarlı tasarım, proje detayları ve brief oluşturma akışı içerir. Luma, Forma ve Volt, gerçek müşteri referansı olarak sunulmayan konsept çalışmalardır.
+Obsidian, titanium and electric-blue creative agency website. Next.js static export, React / TypeScript, Three.js, GSAP ScrollTrigger and Lenis. Nine pages include home, projects, four concept case studies, services, studio and contact.
 
-## Hazır siteyi indir
+## Develop
 
-[Tek dosyalık index.html sürümünü indir](https://github.com/necatenes00-sudo/s/raw/refs/heads/main/downloads/index.html)
+Node.js 22+ and Python 3 are required for the packaging / static preview helpers.
 
-`downloads/index.html`, CSS, JavaScript, 3D kütüphanesi, yazı tipleri ve proje görsellerini içinde taşır. Dosyayı bilgisayara kaydedip çift tıklayarak açabilirsiniz; internet, Node.js veya yerel sunucu gerekmez. Tarayıcı indirmek yerine kodu gösterirse **Ctrl+S** ile `index.html` olarak kaydedin.
-
-Tek dosyalık çıktıyı yeniden oluşturmak ve çevrimdışı doğrulamak için:
-
-```bash
-npm run build:standalone
-npm run test:standalone
-```
-
-Yönetilen bulut tarayıcısı `file://` erişimini engellediği için otomatik testler aynı HTML içeriğini belleğe yükleyerek, internet erişimi kapalıyken doğrular. Yerel dosyaya çift tıklama işlemi bu ortamda doğrudan test edilememiştir.
-
-[Yayına hazır ZIP dosyasını indir](downloads/demir-digital-site.zip?raw=true)
-
-Bu paket derlenmiş siteyi içerir. ZIP'i açıp içeriğini bir statik web sunucusunun kök dizinine yükleyin. Bilgisayarda görüntülemek için ZIP'ten çıkardığınız klasörde `python -m http.server 8080` çalıştırıp tarayıcıda `http://localhost:8080` adresini açabilirsiniz. 3D deneyimi ve JavaScript modülleri için sayfayı bir web sunucusu üzerinden açın.
-
-Kaynak kodu indirmek için GitHub'da **Code → Download ZIP** seçeneğini kullanın. Geliştirme adımları aşağıdadır.
-
-## Çalıştırma
-
-Node.js 22.12+ önerilir.
-
-```bash
-npm ci
+```sh
+npm ci --no-audit --no-fund
 npm run dev
 ```
 
-Üretim derlemesi ve yerel önizleme:
+Development runs on port 3000 with webpack. Production:
 
-```bash
+```sh
 npm run build
 npm run preview
-```
-
-## Doğrulama
-
-```bash
 npm test
+npm run package
 ```
 
-Node test çalıştırıcısı, Vite üzerinden açılan siteyi Playwright ve kurulu Chromium ile tarayıcıda doğrular. Chromium bulunmayan bir makinede önce `npx playwright install chromium` çalıştırın.
+Production preview is port 4173; tests use installed Chromium at `/usr/bin/chromium`. Override the test URL with `TEST_URL`. `npm run typecheck` checks TypeScript. Deploy the contents of `out/` to a static host supporting directory `index.html` files. The deployment archive is `downloads/demir-digital-site.zip`; unzip into your hosting `public_html` directory. Opening exported HTML directly with file:// does not support Next.js navigation.
 
-## Uygulama notları
+## GitHub Pages
 
-- `prefers-reduced-motion` tercihi desteklenir; WebGL kullanılamadığında alternatif görsel sunulur.
-- İletişim akışı demo amaçlıdır: indirilebilir proje briefi oluşturur, dışarıya mesaj göndermez. Üretimde gerçek iletişim teslimatı için bir sunucu veya form hizmeti bağlanmalıdır.
-- `npm run build` çıktısı `dist/` klasöründedir ve statik barındırmaya uygundur.
+`npm run build:pages` builds with `/s` as base path and copies the result into `docs/`. Pages source: branch `main`, directory `/docs`. `docs/.nojekyll` preserves `_next` assets. Rebuild after changing source. The root-host deployment ZIP is built separately without this base path.
+
+## Brand and contact configuration
+
+Edit `lib/site.ts`: set the verified contact email and social profiles. `site.logo` is deliberately null because the official metallic D/arrow logo was not uploaded. Add the original SVG or transparent PNG under `public/` and set its path; do not redraw the supplied brand mark. Until then the header uses the agency name as text. The 3D sculpture is a design study, not an official logo.
+
+The contact form validates seven fields and prepares an email plus a downloadable text brief. Sending happens in the visitor’s email application; there is no backend or automatic delivery. The current email is a brief placeholder and must be verified before commercial launch.
+
+Portfolio images and showreel are original concept visualizations. Limon Café, Seyban Performance and Ciğer Tarım studies are explicitly labeled concepts; no client engagement or business result is claimed. Asset provenance: `public/media/CREDITS.md`.
+
+Keyboard-accessible navigation, reduced-motion handling, mobile horizontal exhibition scrolling and a non-WebGL fallback are included. No analytics or remote image/font service is required.
