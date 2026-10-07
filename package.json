@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
+    "build:standalone": "node scripts/build-standalone.mjs",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --test tests/site.test.mjs"
+    "test": "node --test tests/site.test.mjs",
+    "test:standalone": "node --test tests/standalone.test.mjs"
   },
   "dependencies": {
     "@fontsource-variable/manrope": "^5.3.0",

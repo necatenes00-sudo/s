@@ -6,7 +6,10 @@ gsap.registerPlugin(ScrollTrigger);
 function replaceSymbols(root = document.body) {
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   const nodes = [];
-  while (walker.nextNode()) if (/[↗↘↑↓✳]/.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+  while (walker.nextNode()) {
+    if (walker.currentNode.parentElement?.closest('script, style, textarea')) continue;
+    if (/[↗↘↑↓✳]/.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+  }
   const paths = {
     '↗': 'M5 19 19 5M5 5h14v14',
     '↘': 'm5 5 14 14M5 19h14V5',
@@ -117,8 +120,9 @@ const projectDialog = document.querySelector('#project-dialog');
 document.querySelectorAll('[data-project]').forEach(button => button.addEventListener('click', () => {
   const key = button.dataset.project;
   const project = projects[key];
+  const projectImage = button.querySelector('img').getAttribute('src');
   const content = document.querySelector('.project-dialog-content');
-  content.innerHTML = `<div class="project-dialog-image" style="background:${project.color}"><img src="/projects/${key}.svg" alt="${project.title} görsel tasarım konsepti" width="1200" height="900"></div><div class="project-dialog-copy"><p class="eyebrow">${project.category} / KONSEPT ÇALIŞMA</p><h2 id="project-dialog-title">${project.title} — ${project.subtitle}</h2><p class="project-dialog-description">${project.description}</p><div class="project-dialog-meta"><div><strong>KAPSAM</strong>${project.scope}</div><div><strong>YIL</strong>2026</div><div><strong>TÜR</strong>Stüdyo konsepti</div></div><button class="text-link project-contact">Sizin markanız için de düşünelim <span>↗</span></button></div>`;
+  content.innerHTML = `<div class="project-dialog-image" style="background:${project.color}"><img src="${projectImage}" alt="${project.title} görsel tasarım konsepti" width="1200" height="900"></div><div class="project-dialog-copy"><p class="eyebrow">${project.category} / KONSEPT ÇALIŞMA</p><h2 id="project-dialog-title">${project.title} — ${project.subtitle}</h2><p class="project-dialog-description">${project.description}</p><div class="project-dialog-meta"><div><strong>KAPSAM</strong>${project.scope}</div><div><strong>YIL</strong>2026</div><div><strong>TÜR</strong>Stüdyo konsepti</div></div><button class="text-link project-contact">Sizin markanız için de düşünelim <span>↗</span></button></div>`;
   replaceSymbols(content);
   content.querySelector('.project-contact').addEventListener('click', () => {
     projectDialog.close();
